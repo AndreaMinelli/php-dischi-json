@@ -33,6 +33,22 @@
           </a>
         </figure>
       </header>
+      <main>
+        <div class="container">
+          <div class="row row-cols-3 g-5">
+            <div v-for="(album, i) in albums" :key="i" class="col">
+              <div class="cs-card">
+                <figure class="mb-4">
+                  <img :src="album.poster" :alt="album.title" />
+                </figure>
+                <h4>{{ album.title }}</h4>
+                <h5>{{ album.author }}</h5>
+                <h4>{{ album.year }}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

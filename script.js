@@ -1,4 +1,17 @@
-const app = Vue.createApp({});
+const albumUri = "http://localhost/php-dischi-json/data.php";
 
-console.log("ok", Vue);
+const app = Vue.createApp({
+  name: "SpotifyAlbum",
+  data() {
+    return {
+      albums: [],
+    };
+  },
+  created() {
+    axios.get(albumUri).then((res) => {
+      this.albums = res.data;
+    });
+  },
+});
+
 app.mount("#root");

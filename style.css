@@ -6,10 +6,17 @@ header {
   padding: 10px 100px;
 }
 
+main {
+  background-color: rgb(29, 45, 60);
+  padding: 40px 0;
+}
+
 img {
   max-width: 100%;
   display: block;
 }
+
+/* Header */
 
 header figure {
   width: 80px;
@@ -19,4 +26,28 @@ header figure {
 header figure img {
   max-height: 100%;
   max-width: auto;
+}
+
+/* Main */
+
+.cs-card {
+  background-color: rgb(17, 32, 48);
+  height: 400px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-card figure {
+  width: 200px;
+}
+
+.cs-card h5 {
+  font-weight: 300;
 }
