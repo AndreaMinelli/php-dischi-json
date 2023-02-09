@@ -12,6 +12,12 @@ const app = Vue.createApp({
     isActive() {
       return this.currentActive;
     },
+    albumsGenres() {
+      const genres = this.albums.map((album) => {
+        return album.genre;
+      });
+      return [...new Set(genres)];
+    },
   },
   methods: {
     getActive(i) {
