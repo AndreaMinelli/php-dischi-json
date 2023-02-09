@@ -1,0 +1,22 @@
+/* Generals */
+
+header {
+  height: 100px;
+  background-color: rgb(6, 19, 31);
+  padding: 10px 100px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header figure {
+  width: 80px;
+  margin: 0;
+}
+
+header figure img {
+  max-height: 100%;
+  max-width: auto;
+}
