@@ -11,6 +11,10 @@ main {
   padding: 40px 0;
 }
 
+.container {
+  max-width: 1080px;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -35,19 +39,19 @@ header figure img {
   height: 400px;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 40px 30px;
   cursor: pointer;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .cs-card figure {
-  width: 200px;
+  width: 70%;
+  flex-shrink: 1;
 }
 
-.cs-card h5 {
+.cs-card h6 {
   font-weight: 300;
 }
