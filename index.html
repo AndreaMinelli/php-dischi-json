@@ -42,13 +42,13 @@
       <main>
         <div class="container">
           <div class="d-flex justify-content-end mb-5">
-            <form action="" class="d-flex align-items-center">
-              <select class="form-select" name="genre-type">
-                <option value="" selected>Filtra per genere</option>
-                <option
-                  v-for="genre in albumsGenres"
-                  :key="genre"
-                  :value="genre">
+            <form @submit.prevent="getFilter" class="d-flex align-items-center">
+              <select
+                v-model="genreFilter"
+                class="form-select"
+                name="genre-type">
+                <option value="">Filtra per genere</option>
+                <option v-for="genre in genresList" :key="genre" :value="genre">
                   {{ genre }}
                 </option>
               </select>
