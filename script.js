@@ -5,7 +5,18 @@ const app = Vue.createApp({
   data() {
     return {
       albums: [],
+      currentActive: null,
     };
+  },
+  computed: {
+    isActive() {
+      return this.currentActive;
+    },
+  },
+  methods: {
+    getActive(i) {
+      this.currentActive = i;
+    },
   },
   created() {
     axios.get(albumUri).then((res) => {

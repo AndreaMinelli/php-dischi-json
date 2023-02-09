@@ -37,13 +37,25 @@
         <div class="container">
           <div class="row row-cols-3 g-5">
             <div v-for="(album, i) in albums" :key="i" class="col">
-              <div class="cs-card">
+              <div class="cs-card" @click="getActive(i)">
                 <figure class="mb-4">
                   <img :src="album.poster" :alt="album.title" />
                 </figure>
                 <h5>{{ album.title }}</h5>
                 <h6>{{ album.author }}</h6>
                 <h5>{{ album.year }}</h5>
+                <div v-show="isActive === i" class="card-overlay">
+                  <div class="overlay-info">
+                    <div class="cs-card">
+                      <figure class="mb-4">
+                        <img :src="album.poster" :alt="album.title" />
+                      </figure>
+                      <h5>{{ album.title }}</h5>
+                      <h6>{{ album.author }}</h6>
+                      <h5>{{ album.year }}</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

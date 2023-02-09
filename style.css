@@ -1,7 +1,7 @@
 /* Generals */
 
 header {
-  height: 100px;
+  height: 70px;
   background-color: rgb(6, 19, 31);
   padding: 10px 100px;
 }
@@ -23,6 +23,7 @@ img {
 /* Header */
 
 header figure {
+  height: 100%;
   width: 80px;
   margin: 0;
 }
@@ -54,4 +55,31 @@ header figure img {
 
 .cs-card h6 {
   font-weight: 300;
+}
+
+.card-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 15px;
+  cursor: default;
+}
+
+.overlay-info {
+  background-color: rgba(17, 32, 48, 0.9);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-info .cs-card {
+  padding: 0;
+  width: 30%;
+  cursor: default;
+  background-color: transparent;
 }
