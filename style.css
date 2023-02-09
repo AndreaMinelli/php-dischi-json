@@ -75,6 +75,7 @@ header figure img {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .overlay-info .cs-card {
@@ -82,4 +83,20 @@ header figure img {
   width: 30%;
   cursor: default;
   background-color: transparent;
+}
+
+.overlay-info .fa-xmark {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
 }

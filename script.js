@@ -15,7 +15,9 @@ const app = Vue.createApp({
   },
   methods: {
     getActive(i) {
-      this.currentActive = i;
+      this.currentActive === null
+        ? (this.currentActive = i)
+        : (this.currentActive = null);
     },
   },
   created() {
